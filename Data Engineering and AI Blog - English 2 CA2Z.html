@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Data Engineering and AI Blog | English 2 CA2Z</title>
+<style>
+:root{--bg:#eef1f6;--ink:#0f1b2d;--muted:#5b6678;--card:#fff;--line:#d8dee9;--navy:#0f1b2d;--blue:#3b5bdb;--mint:#12b886;--sand:#f0b429;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--ink:#e8edf6;--muted:#9aa6bb;--card:#131c2e;--line:#243049}}
+:root[data-theme="dark"]{--bg:#0b1220;--ink:#e8edf6;--muted:#9aa6bb;--card:#131c2e;--line:#243049}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.75 Georgia,"Times New Roman",serif}
+.sans{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{background:var(--navy);color:#fff;background-image:radial-gradient(circle at 85% 20%,rgba(59,91,219,.55),transparent 45%),radial-gradient(circle at 10% 100%,rgba(18,184,134,.35),transparent 40%)}
+.hero{max-width:1180px;margin:0 auto;padding:88px 40px 80px;display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:end}
+.hero h1{font:800 clamp(2.4rem,4.6vw,4rem)/1.05 "Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0 0 20px;letter-spacing:-.02em}
+.hero p{margin:0;font:1.1rem/1.6 "Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#c3cde0}
+.team{border-left:3px solid var(--mint);padding-left:24px;font:1rem/2 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.team b{display:block;font-weight:600;font-size:.85rem;color:#8fa0bd;margin-bottom:6px}
+.team span{display:block;font-size:1.1rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+nav div{max-width:1180px;margin:0 auto;padding:0 40px;display:flex;gap:32px;font:600 15px/1 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+nav a{color:var(--muted);text-decoration:none;padding:20px 0;border-bottom:3px solid transparent}
+nav a:hover,nav a:focus-visible{color:var(--blue);border-color:var(--blue);outline:none}
+main{max-width:1180px;margin:0 auto;padding:56px 40px 80px}
+article{display:grid;grid-template-columns:5fr 7fr;gap:48px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:44px;margin:0 0 48px}
+article:nth-of-type(2){grid-template-columns:7fr 5fr}
+article:nth-of-type(2) .side{order:2}
+.photo{
+    height:420px;
+    width:100%;
+    border-radius:8px;
+    overflow:hidden;
+    position:relative;
+    background:var(--navy);
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+article:nth-of-type(2) .photo{background:linear-gradient(150deg,var(--navy),var(--mint))}
+article:nth-of-type(3) .photo{background:linear-gradient(150deg,var(--navy),#7048e8)}
+h2{font:800 1.9rem/1.2 "Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0 0 4px;letter-spacing:-.01em}
+.by{font:14px "Segoe UI",Roboto,sans-serif;color:var(--muted);margin:0 0 22px}
+h3{font:700 1rem "Segoe UI",Roboto,sans-serif;margin:24px 0 6px;color:var(--blue)}
+.draft{border-left:3px solid var(--sand);background:rgba(240,180,41,.12);padding:12px 18px;margin:0;border-radius:0 6px 6px 0}
+footer{background:var(--navy);color:#9aa6bb;text-align:center;padding:32px;font:14px "Segoe UI",Roboto,sans-serif}
+@media (max-width:880px){.hero,article,article:nth-of-type(2){grid-template-columns:1fr}.hero{padding:56px 24px}article:nth-of-type(2) .side{order:0}.photo{min-height:200px}article{padding:24px}main,nav div{padding-left:20px;padding-right:20px}nav div{gap:20px;overflow-x:auto}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <div>
+      <h1>Data Engineering and Artificial Intelligence</h1>
+      <p>Our blog for English 2 CA2Z · Universidad Santo Tomás</p>
+    </div>
+
+    <div class="team">
+      <b>Team</b>
+      <span>Tomás Martínez</span>
+      <span>Felipe Mora</span>
+      <span>David Moreno</span>
+      <span>Luna Rodriguez</span>
+      <span>Valentina Zarate</span>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Entries">
+  <div>
+    <a href="#e1">Key events</a>
+    <a href="#e2">Why we chose it</a>
+    <a href="#e3">Pros and cons</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ENTRY 1 -->
+<article id="e1">
+
+  <div class="side">
+    <div class="photo" role="img" aria-label="Technology photo">
+      <img src="images/image_1.jpg">
+    </div>
+  </div>
+
+  <div>
+    <h2>Three events that shaped our major</h2>
+    <p class="by">Written by Tomás Martínez, Felipe Mora, David Moreno, Luna Rodriguez and Valentina Zarate</p>
+
+    <h3>Event 1: The creation of the Internet – 1983</h3>
+    <p class="draft">
+      In 1983, the Internet started to use a system called TCP/IP. This was an important
+      moment because computers could communicate with each other in a better way.
+      Today, the Internet is very important for technology. Data engineers use the Internet
+      to send, receive and work with a lot of information. Without the Internet, many of
+      the technologies that we use today would be very different.
+    </p>
+
+    <h3>Event 2: The creation of the World Wide Web – 1989</h3>
+    <p class="draft">
+      In 1989, Tim Berners-Lee created the World Wide Web. The Web allowed people to
+      access information through websites. This changed the way people use computers
+      and information. Today, we can use websites to study, work, buy products and
+      communicate with other people. For our major, the Web is also important because
+      we can create applications that work with data and artificial intelligence.
+    </p>
+
+    <h3>Event 3: The growth of Artificial Intelligence – 2010s</h3>
+    <p class="draft">
+      During the 2010s, Artificial Intelligence became more popular and powerful.
+      Computers started to learn from large amounts of data and could do more complex
+      tasks. Today, AI can help people with images, text, data and many other things.
+      This event is important for our major because we study both data and artificial
+      intelligence. In the future, AI will probably be part of many different jobs and
+      technologies.
+    </p>
+  </div>
+
+</article>
+
+
+<!-- ENTRY 2 -->
+<article id="e2">
+
+  <div>
+    <h2>Why we chose to study our major</h2>
+
+    <p class="by">
+      Written by Tomás Martínez, Felipe Mora, David Moreno, Luna Rodriguez and Valentina Zarate
+    </p>
+
+    <p class="draft">
+      We chose to study Data Engineering and Artificial Intelligence at Universidad Santo
+      Tomás for different reasons. First, we think this career can give us many job
+      opportunities in the future. Today, many companies need people who can work with
+      data, technology and artificial intelligence. Because of this, we can work in
+      different areas and companies.
+    </p>
+
+    <p class="draft">
+      Another reason is the money. Technology is an important area and many technology
+      jobs can have good salaries. We know that money is not everything, but it is
+      important for our future. We want to have a good job and a stable life. With this
+      career, we can work in areas like data analysis, programming, databases,
+      artificial intelligence and software.
+    </p>
+
+    <p class="draft">
+      We also chose this major because we had already seen some similar things at
+      school. Some of us worked with computers, programming or technology before.
+      Because of this, the major was not completely new for us. We liked learning
+      about technology, so we wanted to continue learning more at university.
+    </p>
+
+    <p class="draft">
+      We also like that this career can have many different paths. We could work in a
+      company, create our own projects or work remotely. In the future, we could work
+      with international companies and use English every day. We will need to learn
+      more programming, mathematics and technology, but we think it will be useful for
+      our future.
+    </p>
+
+    <p class="draft">
+      Finally, Artificial Intelligence is growing very quickly. We think it will change
+      many jobs and industries. As students of this career, we can learn how these
+      technologies work and how to use them. For all these reasons, we decided that
+      Data Engineering and Artificial Intelligence is a good career for us.
+    </p>
+  </div>
+
+  <div class="side">
+    <div class="photo" role="img" aria-label="Data and artificial intelligence">
+      <img src="images/image_2.jpg">
+    </div>
+  </div>
+
+</article>
+
+
+<!-- ENTRY 3 -->
+<article id="e3">
+
+  <div class="side">
+    <div class="photo" role="img" aria-label="Students working with technology">
+      <img src="images/image_3.jpg">
+    </div>
+  </div>
+
+  <div>
+    <h2>Advantages and disadvantages of our major</h2>
+
+    <p class="by">
+      Written by Tomás Martínez, Felipe Mora, David Moreno, Luna Rodriguez and Valentina Zarate
+    </p>
+
+    <h3>Advantages</h3>
+
+    <p class="draft">
+      One advantage of our major is that there are many job opportunities. Data is
+      important for almost every company, so data engineers and AI professionals can
+      work in different areas. We can work in technology, finance, health, marketing,
+      business and other industries.
+    </p>
+
+    <p class="draft">
+      Another advantage is that we can work with new technologies. We learn about
+      programming, databases, data and artificial intelligence. These technologies are
+      growing, so we can learn new things during our careers. We can also work remotely
+      in some jobs, which can be useful in the future.
+    </p>
+
+    <p class="draft">
+      A third advantage is that this career can have good salaries. Companies need
+      people with technology skills, so these jobs can offer good economic opportunities.
+      We can also create our own projects and businesses with the knowledge that we
+      learn at university.
+    </p>
+
+    <h3>Disadvantages</h3>
+
+    <p class="draft">
+      One disadvantage is that the career can be difficult. We need to study mathematics,
+      programming and other technical subjects. Sometimes the topics can be confusing,
+      and we need to practice a lot to understand them.
+    </p>
+
+    <p class="draft">
+      Another disadvantage is that technology changes very fast. We cannot stop learning
+      after finishing university. We will need to learn new programming languages,
+      tools and technologies. This can take a lot of time.
+    </p>
+
+    <p class="draft">
+      Finally, working with computers for many hours can be tiring. We can spend a lot
+      of time sitting and looking at a screen. For this reason, we should take breaks,
+      exercise and have a good balance between university, work and personal life.
+    </p>
+
+  </div>
+
+</article>
+
+</main>
+
+<footer>
+  English 2 · CA2Z · Tomás Martínez, Felipe Mora, David Moreno, Luna Rodriguez and Valentina Zarate
+</footer>
+
+</body>
+</html>
